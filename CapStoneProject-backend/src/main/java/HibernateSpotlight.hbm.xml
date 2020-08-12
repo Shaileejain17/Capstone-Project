@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.model.SpotLight" table = "Spotlight_Details">       
+      
+      <id name = "id" column = "id" type = "int">
+         <generator class="assigned"/>
+      </id>
+      
+      <property name = "title"    column = "title"    type = "string"/>      
+      <property name = "description"  column = "description"  type = "string"/>     
+      <property name = "language"  column = "language"  type = "string"/>   
+      <property name = "country" column = "country" type = "string"/>
+      <property name = "keywords"  column = "keywords"  type = "string"/>
+      <property name = "spotlight"  column = "spotlight"  type = "boolean"/>
+      <property name = "productImage"  column = "productImage"  type = "string"/>
+      <property name = "startDate"  column = "startDate"  type = "date"/>
+      <property name = "endDate" column = "endDate" type = "date"/>
+      
+   </class>
+</hibernate-mapping>
